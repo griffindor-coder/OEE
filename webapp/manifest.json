@@ -1,51 +1,47 @@
 {
-    "_version": "1.58.0",
-    "sap.app": {
-        "id": "OEECard",
-        "i18n": "i18n/i18n.properties",
-        "title": "{{appTitle}}",
-        "description": "{{appDescription}}",
-        "applicationVersion": {
-            "version": "1.0.0"
-        }
-    },
-    "sap.ui": {
-        "technology": "UI5",
-        "deviceTypes": {
-            "desktop": true,
-            "tablet": true,
-            "phone": true
-        }
-    },
-    "sap.ui5": {
-        "dependencies": {
-            "miniUI5Version": "1.108.0",
-            "libs": {
-                "sap.ui.core": {},
-                "sap.m": {}
-            }
-        },
-        "models": {
-            "i18n": {
-                "type": "sap.ui.model.resource.ResourceModel",
-                "settings": {
-                    "bundleName": "OEECard.i18n.i18n",
-                    "supportedLocales": [
-                        ""
-                    ],
-                    "fallbackLocale": ""
-                }
-            }
-        },
-        "rootView": {
-            "viewName": "OEECard.view.View1",
-            "type": "XML",
-            "id": "OEECard"
-        },
-        "resources": {
-            "css": [{ "url": "css/style.css"
-
-            }]
-        }
+  "_version": "1.58.0",
+  "sap.app": {
+    "id": "OEECard",
+    "i18n": "i18n/i18n.properties",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "applicationVersion": {
+      "version": "1.0.0"
     }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "miniUI5Version": "1.108.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {}
+      }
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "OEECard.i18n.i18n",
+          "supportedLocales": [""],
+          "fallbackLocale": ""
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "OEECard.view.View1",
+      "type": "XML",
+      "id": "OEECard"
+    },
+    "resources": {
+      "css": [{ "url": "css/style.css" }]
+    }
+  }
 }
