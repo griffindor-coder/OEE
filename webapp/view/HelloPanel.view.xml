@@ -1,0 +1,33 @@
+<mvc:View
+    controllerName="OEECard.controller.HelloPanel"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Panel
+        headerText="{i18n>helloPanelTitle}"
+        class="sapUiResponsiveMargin"
+        width="auto">
+        <content>
+            <Button
+                id="helloDialogButton"
+                text="{i18n>openDialogButtonText}"
+                press=".onOpenDialog"
+                class="sapUiSmallmarginEnd">
+
+            </Button>
+            <Button
+                text="{i18n>helloButtonText}"
+                press=".onShowHello"
+                class="zCustomButton">
+            </Button>
+
+            <Input
+                value="{/recipient/name}"
+                valueLiveUpdate="true"
+                width="60%" />
+
+            <FormattedText
+                htmlText="Hello {/recipient/type} {/recipient/name}"
+                class="sapUiSmallMargin sapThemeHighlight-asColor zCustomText" />
+        </content>
+    </Panel>
+</mvc:View>

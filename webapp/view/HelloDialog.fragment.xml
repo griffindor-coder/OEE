@@ -1,0 +1,21 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Dialog
+        id="helloDialog"
+        title="Hello {/recipient/name}">
+        <buttons>
+            <Button
+                text="{i18n>dialogExitButtonText}"
+                press=".onExitDialog">
+            </Button>
+
+            <Button
+                text="{i18n>dialogYesButtonText}"
+                press=".onYesDialog">
+
+            </Button>
+        </buttons>
+
+    </Dialog>
+</core:FragmentDefinition>

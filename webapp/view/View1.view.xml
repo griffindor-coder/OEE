@@ -1,0 +1,24 @@
+<!-- Defining a View control (sap.ui.core.mvc.View) belonging namespace to sap.ui.core.mvc -->
+<!--Please
+Note that CONTROLS are always CAPITALIZED!!!  -->
+<!-- Shell Control takes care of the visual adaptation of the application according to the device's
+screen size -->
+<mvc:View
+  controllerName="OEECard.controller.View1"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  displayBlock="true">
+
+  <!-- <Text text="Hello World"/>  -->
+  <Shell>
+    <App class="myApp">
+      <pages>
+        <Page title="{i18n>homePageTitle}">
+          <content>
+            <mvc:XMLView viewName="OEECard.view.HelloPanel"></mvc:XMLView>
+          </content>
+        </Page>
+      </pages>
+    </App>
+  </Shell>
+</mvc:View>
