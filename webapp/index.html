@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>OEECard</title>
+
+    <!--Changes to the attribute data-sap-ui-on-init
+        It was initially pointing to index.js ("module:OEECard/index")
+        Now it points to Component.js   -->
+    <!-- sap.ui.core.ComponentSupport searches all th declared Component in the HTML page
+         and instantiates the Components and puts them into the Component Container (sap.ui.core.ComponentContainer) -->
+    <script
+      id="sap-ui-bootstrap"
+      src="https://ui5.sap.com/1.127.1/resources/sap-ui-core.js"
+      data-sap-ui-theme="sap_horizon"
+      data-sap-ui-libs="sap.m"
+      data-sap-ui-compat-version="edge"
+      data-sap-ui-async="true"
+      data-sap-ui-on-init="module:sap/ui/core/ComponentSupport"
+      data-sap-ui-resource-roots='{"OEECard": "./"}'
+    ></script>
+  </head>
+  <body class="sapUiBody" id="content">
+    <div
+      data-sap-ui-component
+      data-name="OEECard"
+      data-id="container"
+      data-settings='{"id" : "OEECard"}'
+    ></div>
+  </body>
+</html>
